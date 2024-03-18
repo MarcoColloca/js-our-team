@@ -3,6 +3,10 @@ console.log('JS Test')
 
 
 
+
+const cardDOMElement = document.querySelector('.card')
+
+
 const teamArray = [
     // 1° membro del Team
     {
@@ -44,14 +48,18 @@ const teamArray = [
 
 console.log(teamArray)
 
+
+
+
+
 for(let i = 0; i < teamArray.length; i++){
 
-   let teamMember = teamArray[i];
-   //console.log(teamMember)
-
-   console.log('Nome: ' + teamMember.name)
-   console.log('Ruolo: ' + teamMember.role)
-   console.log('Immagine: ' + teamMember.img)
-}
-
+    let teamMember = teamArray[i];
+    //console.log(teamMember)
+ 
+    console.log('Nome: ' + teamMember.name)
+    console.log('Ruolo: ' + teamMember.role)
+    console.log('Immagine: ' + teamMember.img)
+    cardDOMElement.append(teamMember.name, teamMember.role, teamMember.img)
+ }
 
