@@ -15,7 +15,7 @@ function createBootstrapCard(cardName, cardRole, cardImg){
 
     // Card Img
     bootstrapCardImg.src = cardImg
-    bootstrapCardImg.classList.add('pt-2')
+    bootstrapCardImg.classList.add('card-img-top', 'pt-2')
 
     // Card Body
     bootstrapCardBody.classList.add('card-body', 'text-center')
