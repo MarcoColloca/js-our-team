@@ -33,6 +33,21 @@ function createBootstrapCard(cardName, cardRole, cardImg){
     bootstrapCardBody.append(bootstrapCardBodyTitle, bootstrapCardBodyText)
 }
 
+
+
+// Funzione per la generazione di un membro del Team
+function teamMember(teamMembername, teamMemberrole, teamMemberimg){
+    let teamMember = 
+    {
+        name: teamMembername,
+        role: teamMemberrole,
+        img: teamMemberimg
+    }
+
+    return teamMember
+}
+
+
 ////////// ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ Mie Funzioni ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ \\\\\\\\\\
 
 
@@ -43,42 +58,24 @@ const cardsDOMElement = document.querySelector('.cards')
 
 
 const teamArray = [
-    // 1° membro del Team
-    {
-        name: 'Wayne Barnett ',
-        role: 'Founder & CEO',
-        img: './img/wayne-barnett-founder-ceo.jpg'
-    },
+    // 1° membro del Team    
+    teamMember('Wayne Barnett', 'Founder & CEO','./img/wayne-barnett-founder-ceo.jpg'),
+
     // 2° membro del Team
-    {
-        name: 'Angela Caroll ',
-        role: 'Chief Editor',
-        img: './img/angela-caroll-chief-editor.jpg'
-    },
+    teamMember('Angela Caroll', 'Chief Editor','./img/angela-caroll-chief-editor.jpg'),
+
     // 3° membro del Team
-    {
-        name: 'Walter Gordon ',
-        role: 'Office Manager',
-        img: './img/walter-gordon-office-manager.jpg'
-    },
+    teamMember('Walter Gordon', 'Office Manager','./img/walter-gordon-office-manager.jpg'),
+
     // 4° membro del Team
-    {
-        name: 'Angela Lopez ',
-        role: 'Social Media Manager',
-        img: './img/angela-lopez-social-media-manager.jpg'
-    },
+    teamMember('Angela Lopez', 'Social Media Manager','./img/angela-lopez-social-media-manager.jpg'),
+
     // 5° membro del Team
-    {
-        name: 'Scott Estrada ',
-        role: 'Developer',
-        img: './img/scott-estrada-developer.jpg'
-    },
+    teamMember('Scott Estrada', 'Developer','./img/scott-estrada-developer.jpg'),
+
     // 6° membro del Team
-    {
-        name: 'Barbara Ramos ',
-        role: 'Graphic Designer',
-        img: './img/barbara-ramos-graphic-designer.jpg'
-    }
+    teamMember('Barbara Ramos', 'Graphic Designer','./img/barbara-ramos-graphic-designer.jpg'),
+
 ]   
 
 console.log(teamArray)
