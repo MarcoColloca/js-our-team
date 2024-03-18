@@ -2,6 +2,7 @@ console.log('JS Test')
 
 ////////// ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ Mie Funzioni ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ \\\\\\\\\\
 
+// Funzione per la creazione di una Card Bootstrap con Immagine, Titolo e Testo
 function createBootstrapCard(cardName, cardRole, cardImg){
     const bootstrapCard = document.createElement('div')
     const bootstrapCardImg = document.createElement('img')
@@ -83,7 +84,7 @@ const teamArray = [
 console.log(teamArray)
 
 
-
+// Ciclo for per stampare le variabili degli oggetti contenuti nell'array e creare le carte tramite una funzione
 for(let i = 0; i < teamArray.length; i++){
 
     let teamMember = teamArray[i];
