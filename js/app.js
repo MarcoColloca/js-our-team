@@ -41,3 +41,17 @@ const teamArray = [
         img: 'barbara-ramos-graphic-designer.jpg'
     }
 ]   
+
+console.log(teamArray)
+
+for(let i = 0; i < teamArray.length; i++){
+
+   let teamMember = teamArray[i];
+   //console.log(teamMember)
+
+   console.log('Nome: ' + teamMember.name)
+   console.log('Ruolo: ' + teamMember.role)
+   console.log('Immagine: ' + teamMember.img)
+}
+
+
