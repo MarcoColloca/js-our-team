@@ -10,7 +10,7 @@ img{
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 219, 219);
 }
 
 .page-header{
@@ -27,4 +27,8 @@ main{
 
 .text-gray{
     color: rgb(90, 90, 90);
+}
+
+.cards.row{
+    justify-content: center;
 }

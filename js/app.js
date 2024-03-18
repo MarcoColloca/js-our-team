@@ -11,7 +11,7 @@ function createBootstrapCard(cardName, cardRole, cardImg){
     const bootstrapCardBodyText = document.createElement('p')
 
     // Card
-    bootstrapCard.classList.add('card', 'col-4', 'gy-5')
+    bootstrapCard.classList.add('card', 'col-3', 'gy-5', 'mx-2')
 
     // Card Img
     bootstrapCardImg.src = cardImg
