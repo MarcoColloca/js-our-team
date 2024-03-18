@@ -2,14 +2,23 @@ console.log('JS Test')
 
 ////////// ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ Mie Funzioni ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ \\\\\\\\\\
 
+// Funzione per la creazione di div nel dom
+function createDivDOMElement(){
+    const divDOMElement = document.createElement('div')
+
+    return divDOMElement
+}
+
+
+
 // Funzione per la creazione di una Card Bootstrap con Immagine, Titolo e Testo
 function createBootstrapCard(cardName, cardRole, cardImg){
-    const bootstrapCard = document.createElement('div')
+    const bootstrapCard = createDivDOMElement()
     const bootstrapCardImg = document.createElement('img')
-    const bootstrapCardBody = document.createElement('div')
+    const bootstrapCardBody = createDivDOMElement()
     const bootstrapCardBodyTitle = document.createElement('h5')
     const bootstrapCardBodyText = document.createElement('p')
-    const bootstrapCol4 = document.createElement('div')
+    const bootstrapCol4 = createDivDOMElement()
 
     // Col-4
     bootstrapCol4.classList.add('col-4')
