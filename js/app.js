@@ -1,5 +1,6 @@
 console.log('JS Test')
 
+////////// ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ Mie Funzioni ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ \\\\\\\\\\
 
 function createBootstrapCard(cardName, cardRole, cardImg){
     const bootstrapCard = document.createElement('div')
@@ -30,6 +31,8 @@ function createBootstrapCard(cardName, cardRole, cardImg){
     bootstrapCard.append(bootstrapCardImg, bootstrapCardBody)
     bootstrapCardBody.append(bootstrapCardBodyTitle, bootstrapCardBodyText)
 }
+
+////////// ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ Mie Funzioni ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ \\\\\\\\\\
 
 
 
@@ -81,26 +84,14 @@ console.log(teamArray)
 
 
 
-
-
 for(let i = 0; i < teamArray.length; i++){
 
     let teamMember = teamArray[i];
-    //console.log(teamMember)
- 
+    
     console.log('Nome: ' + teamMember.name)
     console.log('Ruolo: ' + teamMember.role)
     console.log('Immagine: ' + teamMember.img)
-    //cardsDOMElement.append(teamMember.name, teamMember.role, teamMember.img)
+    
     
     createBootstrapCard(teamMember.name, teamMember.role, teamMember.img)
 }
-
-/*
-for(let j = 0; j < teamArray.length; j++){
-    const myCardDOMElement = document.createElement('div')
-    myCardDOMElement.classList.add('card', 'col-4')
-    myCardDOMElement.innerHTML(teamMember.name, teamMember.role, teamMember.img)
-    cardsDOMElement.append(myCardDOMElement)
-}
-*/
