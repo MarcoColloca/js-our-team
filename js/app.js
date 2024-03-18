@@ -9,16 +9,17 @@ function createBootstrapCard(cardName, cardRole, cardImg){
     const bootstrapCardBodyText = document.createElement('p')
 
     // Card
-    bootstrapCard.classList.add('card')
+    bootstrapCard.classList.add('card', 'col-4', 'gy-5')
 
     // Card Img
     bootstrapCardImg.src = cardImg
+    bootstrapCardImg.classList.add('pt-2')
 
     // Card Body
-    bootstrapCardBody.classList.add('card-body')
+    bootstrapCardBody.classList.add('card-body', 'text-center')
 
     // Card Title
-    bootstrapCardBodyTitle.classList.add('card-title')
+    bootstrapCardBodyTitle.classList.add('card-title', 'text-gray')
     bootstrapCardBodyTitle.innerHTML = cardName
 
     bootstrapCardBodyText.classList.add('card-text')
